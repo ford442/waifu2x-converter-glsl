@@ -2,16 +2,23 @@
 #ifndef FILTER_GL_H_
 #define FILTER_GL_H_
 
-#include <stdint.h>
-#include <assert.h>
-
-#if defined(_WIN32)
-	#include <GL/glew.h>
-#elif defined(__APPLE__)
-	#include <OpenGL/gl3.h>
-#endif
-
-#include <GLFW/glfw3.h>
+#include <cassert>
+#include <algorithm>
+#include <cstring>
+#include <cstdarg>
+#include <cmath>
+#include <cstdio>
+#include <cstdint>
+#include <cstdlib>
+#include <EGL/egl.h>
+#include <EGL/eglext.h>
+#include <GLES3/gl3.h>
+#define __gl2_h_
+#include <GLES2/gl2ext.h>
+#include <emscripten.h>
+#include <emscripten/html5.h>
+#include <iostream>
+#include <ctime>
 #include <opencv2/opencv.hpp>
 
 #if NDEBUG
