@@ -1,4 +1,9 @@
- waifu2x-converter-glsl
+notes:
+Cannot move only GLSL. Requires model file like a GAN!
+Must compile entire app down to WASM.
+
+
+waifu2x-converter-glsl
 ================================================================================
 作成：うえした(@ueshita)
 
